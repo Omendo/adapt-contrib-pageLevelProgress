@@ -108,6 +108,15 @@
                   "inputType": {"type": "Boolean", "options": [true, false]},
                   "validators": [],
                   "help": "If set to 'false', Page Level Progress will not represent page completion in progress bar"
+                },
+                "_showMenu": {
+                  "type": "boolean",
+                  "required":true,
+                  "default": true,
+                  "title": "Show menu",
+                  "inputType": {"type": "Boolean", "options": [true, false]},
+                  "validators": [],
+                  "help": "If set to 'false', click on progress bar won't show menu"
                 }
               }
             }

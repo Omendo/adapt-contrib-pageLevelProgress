@@ -80,7 +80,9 @@ define(function(require) {
 
         onProgressClicked: function(event) {
             if(event && event.preventDefault) event.preventDefault();
-            Adapt.drawer.triggerCustomView(new PageLevelProgressView({collection: this.collection}).$el, false);
+            if(Adapt.course.get("_pageLevelProgress")._showMenu !== false) {
+                Adapt.drawer.triggerCustomView(new PageLevelProgressView({collection: this.collection}).$el, false);
+            }
         }
 
     });
